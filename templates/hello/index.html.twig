@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+{% block title %}Hello World{% endblock %}
+{% block body %}
+    <p>ここからVueComponent</p>
+    <div {{ vue_component('Hello', {'name': 'John doe'}) }} ></div>
+    <p>ここまでVueComponent</p>
+{% endblock %}
